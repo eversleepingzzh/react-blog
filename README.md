@@ -1,2 +1,2 @@
-# webpack-my
-webpack 4 基础功能包
+# webpack
+webpack 4 基本配置
