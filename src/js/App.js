@@ -30,16 +30,16 @@ export default class App extends React.Component {
         var child;
         switch (this.state.route) {
             case '':
-                Child = BlogIntro;
+                child = BlogIntro;
                 break;
             case 'Add':
-                Child = Add;
+                child = Add;
                 break;
             case 'MineLostlist':
-                Child = MineLostlist;
+                child = MineLostlist;
                 break;
             default:
-                Child = null;
+                child = null;
         }
         return (
             <div className="blog-container">
