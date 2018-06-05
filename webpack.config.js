@@ -24,16 +24,10 @@ module.exports = {
                 include: path.join(__dirname , 'src'),
                 exclude: /node_modules/
             },{
-                test: /\.less$/,
-                use: ExtractTextPlugin.extract({
-                    fallback: "style-loader",
-                    use: ['css-loader?modules&localIdentName=[local]-[hash:base64:5]', 'postcss-loader', 'less-loader']
-                })
-            },{
                 test: /\.css$/,
                 use: ExtractTextPlugin.extract({
                     fallback: "style-loader",
-                    use: ['postcss-loader', 'css-loader']
+                    use: ['css-loader', 'postcss-loader']
                 })
             },{
                 test: /\.(png|jpg|gif)$/,
