@@ -2,6 +2,8 @@ import React from 'react';
 
 import SideBar from './component/sidebar.js';
 import BlogIntro from './component/blogIntro.js';
+import BlogDetail from './component/blogDetail.js';
+
 import style from '../css/App.css';
 
 export default class App extends React.Component {
@@ -20,32 +22,32 @@ export default class App extends React.Component {
                 var route = window.location.hash.substr(1)
                 self.setState({
                     route:route
-                },() => {
-                    console.log(self.state.route);
                 })
             })
-        },0)
+        },0);
+
+        console.log(this.state.route)
     }
     render () {
-        var child;
+        var Child;
         switch (this.state.route) {
             case '':
-                child = BlogIntro;
+                Child = BlogIntro;
                 break;
-            case 'Add':
-                child = Add;
+            case 'BlogDetail':
+                Child = BlogDetail;
                 break;
-            case 'MineLostlist':
-                child = MineLostlist;
+            case 'BlogWrie':
+                Child = BlogWrite;
                 break;
             default:
-                child = null;
+                Child = null;
         }
         return (
             <div className="blog-container">
                 <SideBar />
                 <div className="blog-content">
-                    <BlogIntro />
+                    <Child />
                 </div>
             </div>
         )
