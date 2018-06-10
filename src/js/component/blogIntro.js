@@ -31,7 +31,7 @@ export default class BlogIntro extends React.Component {
                                 </div>
                                 <div className="article-entry">
                                     <p>目前mac下安装node环境有点麻烦，折腾了一段时间，终于安装成功，下面是一些记录，方便有同样需要的人<br/>
-                                    <a className="article-more-a" href="">more &gt;&gt;</a>
+                                    <a className="article-more-a" href="#BlogDetail">more &gt;&gt;</a>
                                     </p>
                                 </div>
                                 <div className='article-intro'>
@@ -41,6 +41,9 @@ export default class BlogIntro extends React.Component {
                         )
                     })
                 }
+                <div className="write-icon">
+                    
+                </div>
             </div>
         )
     }

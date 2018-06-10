@@ -3,6 +3,7 @@ import React from 'react';
 import SideBar from './component/sidebar.js';
 import BlogIntro from './component/blogIntro.js';
 import BlogDetail from './component/blogDetail.js';
+import BlogWrite from './component/blogWrite.js';
 
 import style from '../css/App.css';
 
@@ -37,7 +38,7 @@ export default class App extends React.Component {
             case 'BlogDetail':
                 Child = BlogDetail;
                 break;
-            case 'BlogWrie':
+            case 'BlogWrite':
                 Child = BlogWrite;
                 break;
             default:
