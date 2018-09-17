@@ -31,9 +31,11 @@ export default class BlogIntro extends React.Component {
                                     <a>2017-7-17</a>
                                 </div>
                                 <div className="article-entry">
-                                    <p>目前mac下安装node环境有点麻烦，折腾了一段时间，终于安装成功，下面是一些记录，方便有同样需要的人<br/>
-                                    <a className="article-more-a" href="#BlogDetail">more &gt;&gt;</a>
+                                    <p>目前mac下安装node环境有点麻烦，折腾了一段时间，终于安装成功，下面是一些记录，方便有同样需要的人<br/>                                
                                     </p>
+                                    <Link to={'/detail/' + index}>
+                                        <div className="article-more-a" href="#BlogDetail">more &gt;&gt;</div>
+                                    </Link>   
                                 </div>
                                 <div className='article-intro'>
 
