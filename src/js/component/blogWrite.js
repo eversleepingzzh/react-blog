@@ -11,8 +11,10 @@ export default class BlogWrite extends React.Component {
     }
 
     render() {
-        <div>
-            3333333
-        </div>
+        return (
+            <div>
+                3333333
+            </div>
+        )
     }
 }
