@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 import '../../css/blogIntro.css';
 
 
@@ -41,9 +42,8 @@ export default class BlogIntro extends React.Component {
                         )
                     })
                 }
-                <div className="write-icon">
-                    
-                </div>
+
+                <Link to="/write"><div className="write-icon"></div></Link>
             </div>
         )
     }
